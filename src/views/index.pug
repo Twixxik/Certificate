@@ -1,0 +1,21 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+    - const title = "Just do it. Please!"
+
+
+block content
+
+    .cert
+        .container
+            .cert__head
+                h1 Онлайн-сертификат
+                p Доставка радости в пару кликов: выберите нужный номинал, введите данные получателя и напишите теплые слова.
+
+            form(id="certForm").cert__form
+
+
+block scripts
+    script(src="/js/vendor.js")
+    script(src="/js/main.js")
