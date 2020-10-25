@@ -1,8 +1,3 @@
-/**
- * by Twixxik
- *
- * Use attribute "defer" for initialized js after DOM loaded
- */
 
 import "./import/modules";
 import "./import/components";
@@ -38,7 +33,7 @@ window.cancelAnimate = window.cancelAnimationFrame || window.webkitCancelAnimati
 
 // Слайдер
 //====================//
-class Slider {
+window.Slider = class Slider {
     constructor(element) {
         element.Slider = this;
         this.element = element;
@@ -140,14 +135,14 @@ class Slider {
             this.goTo(this.index);
         }).bind(this), 150);
     }
-}
+};
 //====================//
 
 
 
 // Анимации
 //====================//
-class Animate {
+window.Animate = class Animate {
     constructor({timing, callback, duration}) {
         this.animateId = null;
         this.startTime = performance.now();
@@ -185,7 +180,7 @@ class Animate {
         this.stopTime = performance.now();
         this.animateId = null;
     }
-}
+};
 //====================//
 
 
@@ -254,7 +249,7 @@ Inputmask.extendDefaults({
 
 
 
-class Certificate {
+window.Certificate = class Certificate {
     constructor(el, {}) {
         if (el instanceof HTMLFormElement) {
             this.form = el;
@@ -787,7 +782,6 @@ class Certificate {
         this.form.removeChild(item);
         this.items.splice(this.items.indexOf(item), 1);
         this.refreshCheckout();
-        this.validate();
     }
 
     validateItem(item) {
@@ -842,6 +836,4 @@ class Certificate {
         }
     };
 
-}
-
-window.Certificate = new Certificate("#certForm", {});
+};
