@@ -1419,7 +1419,7 @@ li {
 }
 
 .cert__type._active:after {
-  content: url("/img/svg/checked.svg");
+  content: url("../img/svg/checked.svg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1812,7 +1812,7 @@ li {
 }
 
 .cert__fieldset._save .cert__item .cert__action ._edit:after {
-  content: url("/img/svg/pen.svg");
+  content: url("../img/svg/pen.svg");
   position: absolute;
   top: 0;
   right: 0;

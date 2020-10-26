@@ -491,27 +491,27 @@ window.Certificate = /*#__PURE__*/function () {
         types: [{
           name: "Сертификат 1",
           value: "1",
-          img: "/img/Сертификат 1.png",
+          img: "./img/Сертификат 1.png",
           class: ""
         }, {
           name: "Сертификат 2",
           value: "2",
-          img: "/img/Сертификат 2.png",
+          img: "./img/Сертификат 2.png",
           class: ""
         }, {
           name: "Сертификат 3",
           value: "3",
-          img: "/img/Сертификат 3.png",
+          img: "./img/Сертификат 3.png",
           class: ""
         }, {
           name: "Сертификат 4",
           value: "4",
-          img: "/img/Сертификат 4.png",
+          img: "./img/Сертификат 4.png",
           class: ""
         }, {
           name: "Сертификат 5",
           value: "5",
-          img: "/img/Сертификат 5.png",
+          img: "./img/Сертификат 5.png",
           class: ""
         }]
       },
